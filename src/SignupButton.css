@@ -1,0 +1,29 @@
+.global-btn {
+  color: rgb(13, 12, 34);
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, left 0.3s ease;
+  position: relative;
+  left: 0; 
+}
+
+.global-btn span {
+  margin-left: 5px;
+}
+
+.global-btn:hover {
+  left: 10px; 
+  transform: scale(1.05); 
+  background-color: rgb(34, 34, 64); 
+  color: white;
+}
+
+.glow {
+  background-color: #EFFF44 !important; 
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: rgb(13, 12, 34);
+}

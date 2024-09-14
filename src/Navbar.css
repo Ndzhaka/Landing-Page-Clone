@@ -1,0 +1,194 @@
+/* General Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  transition: all 0.3s ease; /* Smooth transition for the navbar */
+  margin-bottom: 15px;
+}
+
+
+button {
+  background: rgb(13, 12, 34);
+  transition: opacity 0.3s ease; /* Smooth transition for button opacity */
+}
+
+.login-btn {
+  background: none;
+  color: var(--textcolor);
+}
+
+/* A new container to group logo and links together */
+.nav-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative; /* For positioning the hamburger menu */
+}
+
+.logo img {
+  margin-top: 5px;
+  width: 100px;
+  transition: width 0.3s ease; /* Smooth transition for logo size */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  transition: font-size 0.3s ease; /* Smooth transition for logo font size */
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: auto; /* Space between the hamburger and the logo */
+  transition: color 0.3s ease; /* Smooth transition for hamburger color */
+}
+
+.hamburger:hover {
+  color: var(--textcolor); /* Change color on hover */
+}
+
+/* Links Section */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; /* Adds space between the links */
+  margin: 0;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 10px;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.nav-links a:hover {
+  color: rgb(9, 6, 68); /* Change color on hover */
+}
+
+/* Buttons Section */
+.nav-buttons {
+  display: flex;
+  gap: 10px; /* Adds space between the buttons */
+}
+
+.nav-buttons .login-btn, .signup-btn {
+  color: #333;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 10px;
+  transition: opacity 0.3s ease; /* Smooth transition for button opacity */
+}
+
+.nav-buttons .signup-btn {
+  background-color: var(--background);
+  color: white;
+}
+
+.nav-buttons .signup-btn span {
+  margin-left: 5px;
+}
+
+.nav-buttons .login-btn:hover, .nav-buttons .signup-btn:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Hide buttons on mobile */
+.collapse-btns {
+  display: none; /* Hide these by default */
+}
+
+/* Media Queries */
+
+/* For tablets and mobile devices (portrait and landscape) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between; /* Ensure space between logo and hamburger icon */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Hide links by default */
+    width: 100%; /* Full width for better alignment */
+    flex-direction: column;
+    gap: 10px; /* Adjust space between links */
+    position: absolute;
+    top: 60px; /* Adjust position to appear below the logo and hamburger */
+    left: 0;
+    background: white; /* Background for visibility */
+    padding: 10px;
+    transition: opacity 0.3s ease; /* Smooth transition for menu opacity */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+    opacity: 1; /* Ensure visible */
+  }
+
+  .nav-links a {
+    font-size: 14px; /* Increase font size for better readability */
+  }
+
+  .collapse-btns {
+    display: block; /* Show buttons in the collapsible menu */
+  }
+
+  .nav-links .login-btn, .nav-links .signup-btn {
+    font-size: 14px; /* Increase font size for better readability */
+    padding: 8px 8px;
+    border: none;
+    width: 100%; /* Full width buttons for easier tapping */
+    text-align: center; /* Center text inside buttons */
+    margin-top: 5px; /* Space above buttons */
+    transition: opacity 0.3s ease; /* Smooth transition for button opacity */
+  }
+
+  .nav-links .signup-btn.collapse-btn {
+    color: white; /* White text color for the collapse menu "Get Started" button */
+    background-color: var(--background); /* Ensure background color */
+  }
+
+  .nav-links .login-btn:hover, .nav-links .signup-btn.collapse-btn:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+  }
+
+  .nav-buttons {
+    display: none; /* Hide buttons on smaller screens */
+  }
+}
+
+/* For smaller mobile devices (portrait) */
+@media (max-width: 480px) {
+  .logo img {
+    width: 80px; /* Adjust logo size */
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links a {
+    font-size: 12px; 
+  }
+
+  .nav-links .login-btn, .nav-links .signup-btn {
+    font-size: 12px; 
+    padding: 6px 6px;
+  }
+}

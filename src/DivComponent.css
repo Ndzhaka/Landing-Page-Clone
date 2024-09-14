@@ -1,0 +1,76 @@
+  .cta-header {
+    color: var(--textcolor);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 320px;
+    margin-left: 0px;
+  }
+
+
+
+  .cta-text {
+    font-size: 10.5px;
+    margin-top: 15px;
+    color: rgba(13, 12, 34, 0.615);
+    width: 270px;
+  }
+
+  
+  @media (max-width: 768px) {
+    .cta-header {
+      font-size: 30px; 
+      line-height: 35px; 
+      width: auto; 
+      margin-left: 10px; 
+    }
+
+    .cta-text {
+      font-size: 14px; 
+      width: auto; 
+      margin-top: 10px; 
+    }
+
+    .div-container {
+      padding: 10px; 
+    }
+
+    .glow {
+      font-size: 10px; 
+    }
+
+    .signup-button {
+      font-size: 10px; 
+      padding: 6px 8px; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cta-header {
+      font-size: 24px; 
+      line-height: 30px;
+      width: auto; 
+      margin-left: 5px; 
+    }
+
+    .cta-text {
+      font-size: 12px; 
+      width: auto; 
+      margin-top: 5px; 
+    }
+
+    .div-container {
+      padding: 5px; 
+    }
+
+    .glow {
+      font-size: 8px; 
+    }
+
+    .signup-button {
+      font-size: 8px; 
+      padding: 4px 6px; 
+    }
+  }

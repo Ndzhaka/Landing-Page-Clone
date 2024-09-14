@@ -1,0 +1,18 @@
+
+body{
+  padding: 8px;
+  font-family: 'Poppins', sans-serif;
+  margin: 3px;
+  background-color: #F2F2F2;
+}
+
+:root {
+  --bgcolor: #F2F2F2;
+  --textcolor: rgb(13, 12, 34);
+  --background: rgb(13, 12, 34);
+  --borderrad: 12px;
+  --white: #fff;
+
+}
+
+

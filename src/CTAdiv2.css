@@ -1,0 +1,14 @@
+.cta-text2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.cta-text .arrow {
+  padding-right: 50px; 
+  font-size: 20px;    
+}
+
